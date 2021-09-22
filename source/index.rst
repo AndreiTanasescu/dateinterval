@@ -1,10 +1,10 @@
-.. dateinterval documentation master file, created by
-   sphinx-quickstart on Wed Sep 22 10:28:54 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+
 
 Welcome to dateinterval's documentation!
 ========================================
+
+.. automodule:: dateinterval.dateinterval
+   :members:
 
 .. toctree::
    :maxdepth: 2
