@@ -4,5 +4,5 @@ python:
   version: 3.6
 
 sphinx:
-  configuration: source/conf.py
+  configuration: docs/conf.py
   fail_on_warning: false
