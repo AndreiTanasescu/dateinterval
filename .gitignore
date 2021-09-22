@@ -127,3 +127,27 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+doc/.buildinfo
+doc/genindex.html
+doc/index.html
+doc/objects.inv
+doc/search.html
+doc/searchindex.js
+doc/.doctrees/environment.pickle
+doc/.doctrees/index.doctree
+doc/_sources/index.rst.txt
+doc/_static/alabaster.css
+doc/_static/basic.css
+doc/_static/custom.css
+doc/_static/doctools.js
+doc/_static/documentation_options.js
+doc/_static/file.png
+doc/_static/jquery-3.5.1.js
+doc/_static/jquery.js
+doc/_static/language_data.js
+doc/_static/minus.png
+doc/_static/plus.png
+doc/_static/pygments.css
+doc/_static/searchtools.js
+doc/_static/underscore-1.13.1.js
+doc/_static/underscore.js
