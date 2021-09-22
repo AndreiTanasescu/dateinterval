@@ -1,7 +1,8 @@
 # dateinterval
 Summarize lists of dates with intervals
 
-[Readthedocs : https://dateinterval.readthedocs.io](https://dateinterval.readthedocs.io)
+* [Readthedocs : https://dateinterval.readthedocs.io](https://dateinterval.readthedocs.io)
+* [PyPi : https://pypi.org/project/dateinterval/](https://pypi.org/project/dateinterval/)
 
 ```
 >>> from datetime import timedelta, date

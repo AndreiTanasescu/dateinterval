@@ -1,7 +1,6 @@
 from typing import Iterable, Iterable
 from datetime import datetime, date, timedelta
 from dateinterval import *
-import pytest
 from itertools import chain
 
 
@@ -14,6 +13,22 @@ def generate_date_ranges():
         date(2021, 7, 1), td=timedelta(days=1), steps=5))
 
     return chain.from_iterable([p1, p2, p3])
+
+def test_hourly_interval():
+    d = list(generate_interval_date_ranges(
+        datetime(2021, 5, 1), td=timedelta(hours=6), steps=8))
+    
+    d.extend(generate_interval_date_ranges(
+        datetime(2021, 8, 9), td=timedelta(hours=6), steps=8))
+    
+    expected = [
+        [datetime(2021, 5, 1, 0, 0), datetime(2021, 5, 3, 0, 0)], 
+        [datetime(2021, 8, 9, 0, 0), datetime(2021, 8, 11, 0, 0)]
+    ]
+
+    actual = summarize_date_ranges(d, gap_toleration=timedelta(hours=6))
+
+    assert expected == actual
 
 
 def test_inverse_interval_generation():
